@@ -1,4 +1,17 @@
-
+#' Create a postcard
+#'
+#' @param width Width
+#' @param height Height
+#' @param text Text
+#' @param text_width Text Width
+#' @param text_x Text X
+#' @param text_y Text Y
+#' @param family Font family
+#' @param background_colour Background Colour
+#' @param text_colour Text Colour
+#'
+#' @return A ggplot2 object
+#' @export
 
 postcard <- function(width,
                      height,
@@ -48,3 +61,15 @@ postcard <- function(width,
 #               family = "serif",
 #               background_colour = "orange",
 #               text_colour = "white")
+
+# TO DO: ggfx - shadow
+# ggplot() +
+#   with_shadow(geom_rect(
+#     aes(
+#       xmin = 1,
+#       xmax = 5,
+#       ymin = 1,
+#       ymax = 7
+#     ),
+#     fill = "orange"), sigma = 1, colour = "darkgrey") +
+#   theme_void()
